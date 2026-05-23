@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-box {
+      background: #fff;
+      padding: 30px;
+      width: 330px;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .signup-box h2 {
+      margin-bottom: 5px;
+    }
+
+    .signup-box p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .google-btn {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .google-btn img {
+      width: 18px;
+      margin-right: 10px;
+    }
+
+    .google-btn:hover {
+      background: #f7f7f7;
+    }
+
+    .divider {
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .divider span {
+      background: #fff;
+      padding: 0 10px;
+      font-size: 12px;
+      color: #888;
+      position: relative;
+      z-index: 1;
+    }
+
+    .divider::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background: #ddd;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+      background: #2c5364;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .signup-btn:hover {
+      background: #203a43;
+    }
+
+    .login-text {
+      display: block;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .login-text a {
+      color: #2c5364;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-box">
+    <h2>Create Account</h2>
+    <p>Join EngX Academia</p>
+
+    <button class="google-btn">
+      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google">
+      Sign up with Google
+    </button>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button class="signup-btn" type="submit">Sign Up</button>
+    </form>
+
+    <span class="login-text">
+      Already have an account? <a href="#">Login</a>
+    </span>
+  </div>
+
+</body>
+</html>
